@@ -1,0 +1,118 @@
+/* Login.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://shorturl.at/begnP") !important;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.65); /* Slightly transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000000; /* Black text color */
+}
+
+.highlighted-text {
+  color: rgb(12, 110, 253); /* Highlight color */
+  padding: 0.1em 0.2em;
+  border-radius: 4px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative; /* Add relative positioning */
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #1c1a1a !important; /* Adjust the icon color */
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+}
+
+/* Properly position the eye icon */
+.password-input-group {
+  position: relative;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1c1a1a !important; /* Adjust the icon color */
+}
+
+.btn-login {
+  width: 100%;
+  background-color: rgb(12, 110, 253);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #0b7cdb; /* Darker color on hover */
+}
+
+.link-signup {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Add more animations */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-login {
+  animation: scaleIn 0.5s ease;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .login-form {
+    width: 100%;
+  }
+}

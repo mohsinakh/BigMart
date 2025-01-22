@@ -1,0 +1,199 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and Body */
+body {
+  font-family: "Baloo Bhai 2", cursive;
+  background-color: #f5f5f5;
+}
+
+/* Product Details Container */
+.product-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Product Details Content */
+.product-details-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  animation: fadeInUp 1s ease;
+}
+
+/* Product Image */
+.product-image img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Info */
+.product-info {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Product Titles */
+.product-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Product Rating */
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: bold;
+}
+
+/* Product Description */
+.product-description {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  margin-top: 1.5rem;
+  background-color: rgb(12, 110, 253);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(0, 34, 255);
+}
+
+/* Product Availability */
+.in-stock {
+  font-weight: bold;
+  color: green;
+}
+
+.out-of-stock {
+  font-weight: bold;
+  color: red;
+}
+
+/* Product Price */
+.product-price {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Specifications Table */
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Detailed Description */
+.product-detailed-description {
+  margin-top: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.product-detailed-description p {
+  margin-bottom: 1rem;
+}
+
+/* Highlight important keywords */
+.product-detailed-description strong {
+  color: #ff6600;
+}
+
+/* Add a subtle background color for better readability */
+.product-detailed-description {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+
+/* Add more margin-top to product-detailed-description when no specifications */
+.product-detailed-description.no-spec {
+  margin-top: 6rem;
+}
+
+/* Media Query at 1000px */
+@media screen and (max-width: 991px) {
+  .product-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    max-width: 100%;
+  }
+
+  .product-info {
+    max-width: 100%;
+    margin-top: 12rem;
+  }
+
+  .product-description,
+  .product-availability,
+  .add-to-cart {
+    margin: 10px 10px;
+  }
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    max-width: 100%;
+  }
+
+  .product-info {
+    max-width: 100%;
+    margin-top: 80px;
+  }
+
+  .product-description,
+  .product-availability,
+  .add-to-cart {
+    margin: 10px 10px;
+  }
+}

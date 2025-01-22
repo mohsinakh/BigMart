@@ -1,0 +1,8 @@
+
+  /* Media Query for Tablets */
+  @media (max-width: 991px) {
+    .bmy-1{
+        margin: 3px 0px;
+      }
+  }
+  

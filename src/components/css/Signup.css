@@ -1,0 +1,83 @@
+/* Signup.css */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://shorturl.at/begnP") !important;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+  }
+  
+  .signup-form {
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .signup-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .highlighted-text {
+    color: rgb(12, 110, 253);
+    padding: 0.1em 0.2em;
+    border-radius: 4px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #666;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .btn-signup {
+    width: 100%;
+    background-color: rgb(12, 110, 253);
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-signup:hover {
+    background-color: #0b7cdb;
+  }
+  
+  /* Icon Styles */
+  .icon {
+    font-size: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

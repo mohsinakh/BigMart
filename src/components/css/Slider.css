@@ -1,0 +1,204 @@
+/* Slider.css */
+.custom-carousel {
+  position: relative;
+  height: 100vh;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #000;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  opacity: 0.7;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.873);
+  transform: scale(1.1);
+}
+
+.carousel-arrow-prev {
+  left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-arrow-next {
+  right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-arrow-prev:hover {
+  transform: translateX(-1px) scale(1.2);
+}
+
+.carousel-arrow-next:hover {
+  transform: translateX(1px) scale(1.2);
+}
+
+.custom-carousel .carousel .thumb {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
+.custom-carousel .carousel .thumb img {
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+.custom-carousel .carousel .thumb:hover img {
+  filter: brightness(100%);
+}
+
+.custom-carousel .carousel .control-arrow {
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  opacity: 0.7;
+}
+
+.custom-carousel .carousel .control-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.873);
+  transform: scale(1.1);
+}
+
+.quote {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgb(248, 121, 17);
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  z-index: 100;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+}
+
+.custom-carousel:hover .quote {
+  opacity: 1;
+}
+
+.custom-carousel .carousel .slide {
+  position: relative;
+}
+
+.custom-carousel .carousel .slide .image {
+  position: relative;
+}
+
+.custom-carousel .carousel .slide .quote {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 80%;
+  z-index: 100;
+}
+
+/* Media Queries */
+
+@media (max-width: 1290px) {
+  .custom-carousel {
+    height: 80vh;
+  }
+  .quote {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1110px) {
+  .custom-carousel {
+    height: 67vh;
+  }
+  .quote {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1010px) {
+  .custom-carousel {
+    height: 64vh;
+  }
+  .quote {
+    font-size: 24px;
+  }
+}
+@media (max-width: 911px) {
+  .custom-carousel {
+    height: 58vh;
+  }
+  .quote {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .custom-carousel {
+    height: 45vh;
+  }
+  .quote {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 598px) {
+  .custom-carousel {
+    height: 39vh;
+  }
+  .quote {
+    font-size: 18px;
+  }
+}
+@media (max-width: 490px) {
+  .custom-carousel {
+    height: 33vh;
+  }
+  .quote {
+    font-size: 17px;
+  }
+  
+}
+@media (max-width: 400px) {
+  .custom-carousel {
+    height: 28vh;
+  }
+  
+  .quote {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .custom-carousel {
+    height: 22vh;
+  }
+  
+  .quote {
+    font-size: 15px;
+  }
+}

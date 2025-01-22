@@ -1,0 +1,84 @@
+/* Responsive Design using Media Queries */
+@media (max-width: 600px) {
+    .seller-home-container {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+  
+  /* Gradient Background and Box Shadow */
+  .seller-home-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Hover Effect */
+  .view-orders-btn {
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-orders-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Animations */
+  .welcome-heading {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* User Info Container */
+  .user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .user-info-container {
+    margin: 10px;
+    width: calc(100% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .user-info-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* User Info Item */
+  .user-info-item {
+    padding: 15px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .user-email {
+    color: #666;
+  }
+  

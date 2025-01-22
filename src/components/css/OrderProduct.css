@@ -1,0 +1,176 @@
+/* OrderProduct.css */
+
+.order-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-status {
+  font-weight: bold;
+}
+
+.order-status.cancelled {
+  color: red;
+}
+
+.order-status.pending {
+  color: orange;
+}
+
+.order-status.delivered {
+  color: green;
+}
+
+.order-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.order-product {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+}
+
+.order-product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* .card-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+} */
+
+.quantity {
+  color: #888;
+}
+
+.total-amount {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-warning{
+  color : white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* .card-body {
+  padding: 20px;
+} */
+
+.order-date {
+  color: #888;
+  margin-bottom: 0;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-1,
+.mb-4 {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Media query for phones */
+@media (max-width: 480px) {
+  .order-products {
+    grid-template-columns: 1fr;
+  }
+
+  .order-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image {
+    height: 120px;
+  }
+
+  .product-details {
+    padding: 10px;
+  }
+
+  .order-status {
+    font-size: 0.8rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .quantity,
+  .total-amount {
+    font-size: 0.8rem;
+  }
+
+  .order-date {
+    font-size: 0.7rem;
+  }
+}
+
+/* Media query for tablets (e.g., iPad) */
+@media (max-width: 768px) {
+  .order-products {
+    grid-template-columns: 1fr;
+  }
+
+  .order-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image {
+    height: 160px;
+  }
+
+  .product-details {
+    padding: 10px;
+  }
+
+  .order-status {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .quantity,
+  .total-amount {
+    font-size: 0.9rem;
+  }
+
+  .order-date {
+    font-size: 0.8rem;
+  }
+}
