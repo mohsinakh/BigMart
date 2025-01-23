@@ -14,7 +14,7 @@ const CartState = (props) => {
       const getCartProducts  = async () => {
         try {
           setcartloading(true)
-          const response = await fetch(`${host}/api/cart/fetchallproducts`, {
+          const response = await fetch(`${host}/fetchallproducts`, {
             method: "GET",
               
             headers: {
@@ -43,7 +43,7 @@ const CartState = (props) => {
      const AddtoCart = async (_id) => {
         try {
           setcartloading(true)
-          const response = await fetch(`${host}/api/cart/addtocart`, {
+          const response = await fetch(`${host}/addtocart`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const CartState = (props) => {
       const EditCart = async (_id, quantity) => {
         try {
           // setcartloading(true);
-          const response = await fetch(`${host}/api/cart/updatecart/${_id}`, {
+          const response = await fetch(`${host}/updatecart/${_id}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -106,7 +106,7 @@ const CartState = (props) => {
   const RemoveFromCart = async (_id) => {
     try {
       // setcartloading(true);
-      const response = await fetch(`${host}/api/cart/removefromcart/${_id}`, {
+      const response = await fetch(`${host}/removefromcart/${_id}`, {
         method: "DELETE",
         headers: {
           "auth-token": localStorage.getItem('token')

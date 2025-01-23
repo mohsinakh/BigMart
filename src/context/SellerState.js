@@ -17,7 +17,7 @@ const SellerState = (props) => {
     try {
         setLoading(true)
         
-      const response = await fetch(`${host}/api/authseller/loginseller`, {
+      const response = await fetch(`${host}/loginseller`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const SellerState = (props) => {
     try {
       setLoading(true);
 
-      const response = await fetch(`${host}/api/user/fetchallusers`, {
+      const response = await fetch(`${host}/fetchallusers`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ const SellerState = (props) => {
     try {
       setLoading(true);
 
-      const response = await fetch(`${host}/api/authseller/fetchallorders`, {
+      const response = await fetch(`${host}/fetchallorders`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ const SellerState = (props) => {
   const removeOrder = async (orderId) => {
     try{
         setLoading(true)
-        const response = await fetch(`${host}/api/authseller/removeorder/${orderId}`,{
+        const response = await fetch(`${host}/removeorder/${orderId}`,{
           method : 'DELETE',
           headers : {
             'auth-token' : localStorage.getItem('sellertoken')

@@ -46,7 +46,7 @@ const togglePassword =()=>{
     //authenticate User 
     const authUser = async () => {
       try {
-        const response = await fetch(`${host}/api/auth/login`, {
+        const response = await fetch(`${host}/login`, {
           method: "POST",
             
           headers: {
@@ -80,7 +80,7 @@ const togglePassword =()=>{
 
       if (password === cpassword) {
         try {
-          const response = await fetch(`${host}/api/auth/createuser`, {
+          const response = await fetch(`${host}/createuser`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -111,7 +111,7 @@ const togglePassword =()=>{
     const getProducts = async () => {
         try {
           setloading(true)
-          const response = await fetch(`${host}/api/product/fetchallproducts`, {
+          const response = await fetch(`${host}/fetchallproduct`, {
           method: "GET",
             
           headers: {
@@ -133,7 +133,7 @@ const togglePassword =()=>{
     const getProductById = async (p_id) => {
         try {
             setloading(true)
-          const response = await fetch(`${host}/api/product/fetchproduct/${p_id}`, {
+          const response = await fetch(`${host}/fetchproduct/${p_id}`, {
           method: "GET",
             
           headers: {

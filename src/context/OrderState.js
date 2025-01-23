@@ -14,7 +14,7 @@ const OrderState = (props) => {
       try {
         setorderloading(true);
         
-        const response = await fetch(`${host}/api/order/fetchorders`, {
+        const response = await fetch(`${host}/fetchorders`, {
           method: "GET",
           headers: {
             "auth-token": localStorage.getItem('token')
@@ -40,7 +40,7 @@ const OrderState = (props) => {
     const placeOrder = async (orderData) => {
       try {
         setorderloading(true);
-        const response = await fetch(`${host}/api/order/placeorder`, {
+        const response = await fetch(`${host}/placeorder`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const OrderState = (props) => {
   const cancelOrder = async (orderId) => {
     try {
       setorderloading(true);
-      const response = await fetch(`${host}/api/order/cancelorder/${orderId}`, {
+      const response = await fetch(`${host}/cancelorder/${orderId}`, {
         method: "PUT",
         headers: {
           "auth-token": localStorage.getItem('token')
@@ -105,7 +105,7 @@ const OrderState = (props) => {
   const removeOrder = async (orderId) => {
     try{
         setorderloading(true);
-        const response = await fetch(`${host}/api/order/removeorder/${orderId}`,{
+        const response = await fetch(`${host}/removeorder/${orderId}`,{
           method : 'DELETE',
           headers : {
             'auth-token' : localStorage.getItem('token')
