@@ -30,17 +30,17 @@ const Slider = () => {
       >
         <div className="slide">
           <div className="image">
-            <img src="https://i.imgur.com/xZDIxJO.jpg" alt="Slide 1" className="img-fluid" />
+            <img src="https://i.postimg.cc/RFZtSPpH/x-ZDIx-JO-Imgur.jpg" alt="Slide 1" className="img-fluid" />
           </div>
         </div>
         <div className="slide">
           <div className="image">
-            <img src="https://i.imgur.com/7RMG71F.jpg" alt="Slide 2" className="img-fluid" />
+            <img src="https://i.postimg.cc/W1Z6Cfxp/7-RMG71-F-Imgur.jpg" alt="Slide 2" className="img-fluid" />
           </div>
         </div>
         <div className="slide">
           <div className="image">
-            <img src="https://i.imgur.com/gaUUQjI.jpg" alt="Slide 3" className="img-fluid" />
+            <img src="https://i.postimg.cc/wxWVmNhz/ga-UUQj-I-Imgur.jpg" alt="Slide 3" className="img-fluid" />
           </div>
         </div>
         {/* Add more slides */}
