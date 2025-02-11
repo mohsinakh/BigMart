@@ -9,7 +9,7 @@ const FeaturedCategories = () => {
         {/* Category 1 */}
         <div className="col-md-4 mb-4">
           <div className="category-item text-center">
-            <img src="https://i.imgur.com/PYHFgqM.jpg" alt="Category 1" className="img-fluid" />
+            <img src="https://i.postimg.cc/cHFQfqth/PYHFgq-M-Imgur.jpg" alt="Category 1" className="img-fluid" />
             <h3>Electronics</h3>
           </div>
         </div>
@@ -17,7 +17,7 @@ const FeaturedCategories = () => {
         {/* Category 2 */}
         <div className="col-md-4 mb-4">
           <div className="category-item text-center">
-            <img src="https://i.imgur.com/gvxawnb.jpg" alt="Category 2" className="img-fluid" />
+            <img src="https://i.postimg.cc/JnrNy70t/gvxawnb-Imgur.jpg" alt="Category 2" className="img-fluid" />
             <h3>Fashion</h3>
           </div>
         </div>
@@ -25,7 +25,7 @@ const FeaturedCategories = () => {
         {/* Category 3 */}
         <div className="col-md-4 mb-4">
           <div className="category-item text-center">
-            <img src="https://i.imgur.com/t9LmJcj.jpg" alt="Category 3" className="img-fluid" />
+            <img src="https://i.postimg.cc/cLfwXt8r/t9-Lm-Jcj-Imgur.jpg" alt="Category 3" className="img-fluid" />
             <h3>Home Decor</h3>
           </div>
         </div>
